@@ -47,8 +47,8 @@ const Home = () => {
                 </div>
 
                 <div className="col-md-10">
-                    <div className='p-3'>
-                        <ReactBootstrap.Table striped bordered hover size="sm">
+                    <div className='p-3 table-responsive-sm table-responsive-md table-responsive-lg'>
+                        <ReactBootstrap.Table striped bordered hover size="sm" >
                             <thead>
                                 <tr>
                                     <th>Title</th>

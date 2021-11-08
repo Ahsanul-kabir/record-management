@@ -45,7 +45,12 @@ const AddEdit = () => {
                 if (response.status === 200) {
                     toast.success('Data Added')
                 }
-            })
+            }).catch(err => {
+                // console.log("Error", err);
+                if (err) {
+                    toast.error("Data Add Fail");
+                }
+            });
     }
 
     const updateRecord = (data, id) => {
@@ -55,7 +60,7 @@ const AddEdit = () => {
         formData.append('Phone', data.Phone);
         formData.append('Email', data.Email);
         formData.append('Description', data.Description);
-        axios.put(`https://care-box-backend.herokuapp.com/api/v1/applicant_test/update_blog/${id}`, formData , {
+        axios.put(`https://care-box-backend.herokuapp.com/api/v1/applicant_test/update_blog/${id}`, formData, {
             headers: {
                 "Custom-User-Agent": "gsdf#g3243F466$"
             }
@@ -66,7 +71,12 @@ const AddEdit = () => {
                     toast.success('Update Data')
                     console.log(formData)
                 }
-            })
+            }).catch(err => {
+                // console.log("Error", err);
+                if (err) {
+                    toast.error("Data Update Fail");
+                }
+            });
     }
 
     const handleSubmit = (e) => {
