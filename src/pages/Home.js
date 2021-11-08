@@ -43,7 +43,7 @@ const Home = () => {
         <section>
             <div style={containerStyle} className="row container-fluid">
                 <div className="col-md-2">
-                    <h1 className='p-5'>Our Data</h1>
+                    <h1 className='p-5'>Records</h1>
                 </div>
 
                 <div className="col-md-10">

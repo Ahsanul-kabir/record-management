@@ -82,7 +82,7 @@ const AddEdit = () => {
                 console.log(state, id)
                 updateRecord(state, id)
             }
-            setTimeout(() => history.push('/'), 500)
+            setTimeout(() => history.push('/'), 10000)
         }
     }
 
